@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Descripción-->
+    <meta name="description" content="Desarrollo de ejercicios con JavaScript">
+    <!--ICON-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <!--GOOGLE FONTS: POPPINS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--Título-->
+    <title>Introducción a JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios con JavaScript</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="s13.html">Sesión 13</a>
+            </li>
+            <li>
+                <a href="s13a.html">Sesión 13 Asíncrona</a>
+            </li>
+            <li>
+                <a href="s14.html">Sesion 14 </a>
+            </li>
+            <li>
+                <a href="s15.html">Sesión 15</a>
+            </li>
+            <li>
+                <a href="s15a.html">Sesión 15 Asíncrona</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Ejercicio 1</h2>
+            <p>Ingresa dos números y obtén la suma y producto</p>
+            <section class="input">
+                <label>Primer número:</label>
+                <input type="number" class="sum_mul" id="n1">
+            </section>
+            <section class="input">
+                <label>Segundo número:</label>
+                <input type="number" class="sum_mul" id="n2">
+            </section>
+            <p class="resultado" id="p_sum_mul"></p>
+            <button id="btn_sum_mul">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 2</h2>
+            <p>Ingresa un número entero y obtén el 20%</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="percent" id="n3">
+            </section>
+            <p class="resultado" id="p_percent"></p>
+            <button id="btn_percent">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 3</h2>
+            <p>Ingresa un valor en metros y obtén su valor en cm y mm</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="meters" id="n4">
+            </section>
+            <p class="resultado" id="p_cm_mm"></p>
+            <button id="btn_cm_mm">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 4</h2>
+            <p>Consiga el área de un triángulo</p>
+            <section class="input">
+                <label>Base:</label>
+                <input type="number" class="base" id="base">
+            </section>
+            <section class="input">
+                <label>Altura:</label>
+                <input type="number" class="altura" id="altura">
+            </section>
+            <p class="resultado" id="p_area"></p>
+            <button id="btn_area">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 5</h2>
+            <p>Ingresa un valor en dólares y obtén su valor en soles</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="dollars" id="dollars">
+            </section>
+            <p class="resultado" id="p_soles"></p>
+            <button id="btn_soles">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 6</h2>
+            <p>Ingresa un valor en pulgadas y obtén su valor en mm</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="pulgadas" id="pulgadas">
+            </section>
+            <p class="resultado" id="p_mm"></p>
+            <button id="btn_mm">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 7</h2>
+            <p>Ingresa un número de 3 cifras y obtén la suma de sus cifras elevado al cuadrado</p>
+            <section class="input">
+                <label>Ingresa un número:</label>
+                <input type="number" class="cifras" id="cifras" maxlength="3"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </section>
+            <p class="resultado" id="p_cifras"></p>
+            <button id="btn_cifras">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 8</h2>
+            <p>Ingresa un monto de dinero y conoce cuánto le corresponde a cada socio</p>
+            <section class="input">
+                <label>Ingresa un monto:</label>
+                <input type="number" class="dinero" id="dinero">
+            </section>
+            <p class="resultado" id="p_d_percent"></p>
+            <button id="btn_d_percent">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 9</h2>
+            <p>Ingresa el precio base de un producto y obtén su IGV y precio final</p>
+            <section class="input">
+                <label>Ingresa el precio base:</label>
+                <input type="number" class="precio" id="p_base">
+            </section>
+            <p class="resultado" id="p_p_final"></p>
+            <button id="btn_p_final">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 10</h2>
+            <p>Ingrese la cantidad de entradas vendidas por cada tipo</p>
+            <section class="input">
+                <label>Entradas generales vendidas:</label>
+                <input type="number" class="e_g" id="e_g">
+            </section>
+            <section class="input">
+                <label>Entradas para mayores de 65 vendidas:</label>
+                <input type="number" class="e_m_65" id="e_m_65">
+            </section>
+            <section class="input">
+                <label>Entradas para menores vendidas:</label>
+                <input type="number" class="e_m" id="e_m">
+            </section>
+            <p class="resultado" id="p_entradas"></p>
+            <button id="btn_entradas">Respuesta</button>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+<script src="js/s13/main.js"></script>
+</html>
