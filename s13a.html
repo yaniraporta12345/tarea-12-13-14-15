@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Descripción-->
+    <meta name="description" content="Desarrollo de ejercicios con JavaScript">
+    <!--ICON-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <!--GOOGLE FONTS: POPPINS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/s13a/styles.css" type="text/css">
+    <!--Título-->
+    <title>Resuelve ejercicios de JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios con <span>JavaScript</span></h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="s13.html">Sesión 13</a>
+            </li>
+            <li>
+                <a href="s13a.html">Sesión 13 Asíncrona</a>
+            </li>
+            <li>
+                <a href="s14.html">Sesion 14 </a>
+            </li>
+            <li>
+                <a href="s15.html">Sesión 15</a>
+            </li>
+            <li>
+                <a href="s15a.html">Sesión 15 Asíncrona</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Ejercicio 1</h2>
+            <p>Calcula el promedio de 3 notas</p>
+            <section class="conjunto">
+                <label>Primera nota:</label>
+                <input type="number" class="p_nota" id="p_nota">
+            </section>
+            <section class="conjunto">
+                <label>Segunda nota:</label>
+                <input type="number" class="s_nota" id="s_nota">
+            </section>
+            <section class="conjunto">
+                <label>Tercera nota:</label>
+                <input type="number" class="t_nota" id="t_nota">
+            </section>
+            <p class="resultado" id="p_promedio"></p>
+            <button id="btn_promedio">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 2</h2>
+            <p>Aumentos del 10%, 12% y 15% a 3 empleados respectivamente</p>
+            <section class="conjunto">
+                <label>Sueldo de empleado A:</label>
+                <input type="number" class="p_sueldo" id="p_sueldo">
+            </section>
+            <section class="conjunto">
+                <label>Sueldo de empleado B:</label>
+                <input type="number" class="s_sueldo" id="s_sueldo">
+            </section>
+            <section class="conjunto">
+                <label>Sueldo de empleado C:</label>
+                <input type="number" class="t_sueldo" id="t_sueldo">
+            </section>
+            <p class="resultado" id="p_aumento"></p>
+            <button id="btn_aumento">Respuesta</button>
+        </article>
+        <article>
+            <h2>Ejercicio 3</h2>
+            <p>Calificación final en base a 3 exámenes con un peso del 30%, 30% y 40%</p>
+            <section class="conjunto">
+                <label>Primera nota:</label>
+                <input type="number" class="p_c_nota" id="p_c_nota">
+            </section>
+            <section class="conjunto">
+                <label>Segunda nota:</label>
+                <input type="number" class="s_c_nota" id="s_c_nota">
+            </section>
+            <section class="conjunto">
+                <label>Tercera nota:</label>
+                <input type="number" class="t_c_nota" id="t_c_nota">
+            </section>
+            <p class="resultado" id="p_c_final"></p>
+            <button id="btn_c_final">Respuesta</button>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+<script src="js/s13/main13a.js"></script>
+</html>
